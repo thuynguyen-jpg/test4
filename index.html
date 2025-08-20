@@ -13,17 +13,20 @@
         document.getElementById("signPreview").src = url;
     }
     </script>
+    <link rel 
 </head>
 <body>
     <h1>Bar-B-Q Sign Generator</h1>
 
     <img id="signPreview" src="img/sign.jpg" style="max-width:600px; display:block; margin-bottom:20px;" alt="Sign Preview">
 
-    <p>Line 1: <input type="text" id="l1"></p>
-    <p>Line 2: <input type="text" id="l2"></p>
-    <p>Line 3: <input type="text" id="l3"></p>
-    <p>Line 4: <input type="text" id="l4"></p>
-
-    <button type="button" onclick="makeSign()">Make my sign</button>
+    <form action="process_form.php" method="post">
+        <p>Line 1: <input type="text" id="l1"></p>
+        <p>Line 2: <input type="text" id="l2"></p>
+        <p>Line 3: <input type="text" id="l3"></p>
+        <p>Line 4: <input type="text" id="l4"></p>
+        <input type="submit" value="Submit">Make my sign</input>
+    </form>
 </body>
 </html>
+
