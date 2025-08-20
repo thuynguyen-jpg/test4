@@ -11,8 +11,8 @@ $bg = imagecreatefromjpeg($bgPath);
 $W  = imagesx($bg);
 $H  = imagesy($bg);
 
-$lineY = [120, 200, 280, 360];
-$letterSpacing = 40;
+$lineY = [384, 411, 438, 466];
+$letterSpacing = 11;
 
 // Minimal special char mapping (add more if needed)
 $charMap = [" "=>null];
@@ -44,3 +44,4 @@ header("Content-Type: image/png");
 imagepng($bg);
 imagedestroy($bg);
 exit;
+
